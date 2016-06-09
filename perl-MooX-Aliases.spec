@@ -15,7 +15,8 @@ BuildRequires:  perl(Moo) >= 1.001
 BuildRequires:  perl(strictures) >= 1
 BuildRequires:  perl(Test::Fatal) >= 0.003
 BuildRequires:  perl(Test::More) >= 0.94
-#BuildRequires:  perl(Distar)
+BuildRequires:  git
+BuildRequires:  perl(Test::CleanNamespaces)
 Requires:       perl(Class::Method::Modifiers) >= 1.05
 Requires:       perl(Moo) >= 1.001
 Requires:       perl(strictures) >= 1
