@@ -6,7 +6,7 @@ License:        GPL+ or Artistic
 Group:          Development/Libraries
 URL:            http://search.cpan.org/dist/MooX-Aliases/
 Source0:        http://www.cpan.org/authors/id/H/HA/HAARG/MooX-Aliases-%{version}.tar.gz
-Source1:        https://github.com/p5sagit/Distar/archive/master.zip
+#Source1:        https://github.com/p5sagit/Distar/archive/master.zip
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
 BuildRequires:  perl >= 0:5.006
