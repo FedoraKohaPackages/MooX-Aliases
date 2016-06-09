@@ -6,6 +6,7 @@ License:        GPL+ or Artistic
 Group:          Development/Libraries
 URL:            http://search.cpan.org/dist/MooX-Aliases/
 Source0:        http://www.cpan.org/authors/id/H/HA/HAARG/MooX-Aliases-%{version}.tar.gz
+Source1:        https://github.com/p5sagit/Distar/archive/master.zip
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
 BuildRequires:  perl >= 0:5.006
@@ -15,7 +16,7 @@ BuildRequires:  perl(Moo) >= 1.001
 BuildRequires:  perl(strictures) >= 1
 BuildRequires:  perl(Test::Fatal) >= 0.003
 BuildRequires:  perl(Test::More) >= 0.94
-BuildRequires:  git
+BuildRequires:  wget
 BuildRequires:  perl(Test::CleanNamespaces)
 Requires:       perl(Class::Method::Modifiers) >= 1.05
 Requires:       perl(Moo) >= 1.001
@@ -30,6 +31,11 @@ via their aliased names.
 
 %prep
 %setup -q -n MooX-Aliases-%{version}
+cd MooX-Aliases-%{version}
+wget https://github.com/p5sagit/Distar/archive/master.zip
+unzip master.zip
+mv Distar-master Distar
+
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
