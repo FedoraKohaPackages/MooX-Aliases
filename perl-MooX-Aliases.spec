@@ -31,7 +31,6 @@ via their aliased names.
 
 %prep
 %setup -q -n MooX-Aliases-%{version}
-cd MooX-Aliases-%{version}
 wget https://github.com/p5sagit/Distar/archive/master.zip
 unzip master.zip
 mv Distar-master Distar
