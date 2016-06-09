@@ -31,7 +31,8 @@ via their aliased names.
 
 %prep
 %setup -q -n MooX-Aliases-%{version}
-wget https://github.com/p5sagit/Distar/archive/master.zip
+#wget https://github.com/p5sagit/Distar/archive/master.zip
+# BUNDLED, since COPR won't download it. A bit naughty, this...
 unzip master.zip
 mv Distar-master Distar
 
