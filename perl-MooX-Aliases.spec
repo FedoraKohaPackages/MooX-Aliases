@@ -16,7 +16,6 @@ BuildRequires:  perl(Moo) >= 1.001
 BuildRequires:  perl(strictures) >= 1
 BuildRequires:  perl(Test::Fatal) >= 0.003
 BuildRequires:  perl(Test::More) >= 0.94
-BuildRequires:  wget
 BuildRequires:  perl(Test::CleanNamespaces)
 BuildRequires:  perl(namespace::autoclean)
 BuildRequires:  perl(Moose)
